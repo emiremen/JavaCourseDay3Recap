@@ -15,9 +15,11 @@ public class Main {
 
         StudentManager studentManager = new StudentManager();
         studentManager.addCourseProgress(student);
+        studentManager.addComment(new Comment(1,7,2,"Ödevimi bitirdim."));
 
         InstructorManager instructorManager = new InstructorManager();
         instructorManager.releaseNewCourse(new Course(2,"Python", "Engin Demiroğ",0));
+        instructorManager.addComment(new Comment(2,4,2,"Ödevlerinizi yapın çocuklar."));
 
 
     }
